@@ -40,11 +40,10 @@ use log::{debug, error, info, warn};
 use openssl::{hash::MessageDigest, pkey::PKey};
 use solana_address_lookup_table_program::state::AddressLookupTable;
 use solana_metrics::{datapoint_error, datapoint_info};
-use solana_net_utils::{bind_more_reuseport, multi_bind_in_range};
+use solana_net_utils::{bind_more_with_config, multi_bind_in_range, SocketConfig};
 use solana_sdk::{
     address_lookup_table_account::AddressLookupTableAccount,
     pubkey::Pubkey,
-    quic::QUIC_ENDPOINTS,
     signature::{read_keypair_file, Signer},
 };
 use tikv_jemallocator::Jemalloc;
@@ -52,6 +51,8 @@ use tokio::{runtime::Builder, signal, sync::mpsc::channel};
 use tonic::transport::Server;
 
 // no-op change to test ci
+
+const QUIC_ENDPOINTS: usize = 4;
 
 #[global_allocator]
 static GLOBAL: Jemalloc = Jemalloc;
@@ -230,10 +231,15 @@ fn get_sockets(args: &Args) -> Sockets {
     assert_eq!(args.tpu_port + 6, tpu_quic_bind_port); // QUIC is expected to be at TPU + 6
     assert_eq!(args.tpu_fwd_port + 6, tpu_fwd_quic_bind_port); // QUIC is expected to be at TPU forward + 6
 
+    let quic_config = SocketConfig {
+        reuseaddr: false,
+        reuseport: true,
+    };
+    
     let transactions_quic_sockets =
-        bind_more_reuseport(tpu_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS);
+        bind_more_with_config(tpu_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS, quic_config.clone()).unwrap();
     let transactions_forwards_quic_sockets =
-        bind_more_reuseport(tpu_fwd_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS);
+        bind_more_with_config(tpu_fwd_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS, quic_config).unwrap();
 
     Sockets {
         tpu_sockets: TpuSockets {
