@@ -235,11 +235,19 @@ fn get_sockets(args: &Args) -> Sockets {
         reuseaddr: false,
         reuseport: true,
     };
-    
-    let transactions_quic_sockets =
-        bind_more_with_config(tpu_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS, quic_config.clone()).unwrap();
-    let transactions_forwards_quic_sockets =
-        bind_more_with_config(tpu_fwd_quic_sockets.pop().unwrap(), QUIC_ENDPOINTS, quic_config).unwrap();
+
+    let transactions_quic_sockets = bind_more_with_config(
+        tpu_quic_sockets.pop().unwrap(),
+        QUIC_ENDPOINTS,
+        quic_config.clone(),
+    )
+    .unwrap();
+    let transactions_forwards_quic_sockets = bind_more_with_config(
+        tpu_fwd_quic_sockets.pop().unwrap(),
+        QUIC_ENDPOINTS,
+        quic_config,
+    )
+    .unwrap();
 
     Sockets {
         tpu_sockets: TpuSockets {
