@@ -19,7 +19,7 @@ use solana_core::{
 };
 use solana_sdk::signature::Keypair;
 use solana_streamer::{
-    nonblocking::quic::DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
+    nonblocking::quic::{TpuType, DEFAULT_WAIT_FOR_CHUNK_TIMEOUT},
     quic::{spawn_server_multi, MAX_STAKED_CONNECTIONS},
     streamer::StakedNodes,
 };
@@ -77,6 +77,7 @@ impl Tpu {
 
         let (_, tpu_quic_t) = spawn_server_multi(
             "quic_streamer_tpu",
+            TpuType::Regular,
             transactions_quic_sockets,
             keypair,
             *tpu_ip,
@@ -94,6 +95,7 @@ impl Tpu {
 
         let (_, tpu_forwards_quic_t) = spawn_server_multi(
             "quic_streamer_tpu_forwards",
+            TpuType::Staked,
             transactions_forwards_quic_sockets,
             keypair,
             *tpu_fwd_ip,
