@@ -100,7 +100,7 @@ impl Tpu {
             exit.clone(),
             MAX_QUIC_CONNECTIONS_PER_PEER,
             staked_nodes.clone(),
-            MAX_STAKED_CONNECTIONS.saturating_add(max_unstaked_quic_connections),
+            MAX_STAKED_CONNECTIONS,
             0, // Prevent unstaked nodes from forwarding transactions
             DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
             Duration::from_millis(DEFAULT_TPU_COALESCE_MS),
