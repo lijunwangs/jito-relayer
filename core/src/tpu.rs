@@ -19,7 +19,7 @@ use solana_core::{
 };
 use solana_sdk::signature::Keypair;
 use solana_streamer::{
-    nonblocking::quic::{DEFAULT_WAIT_FOR_CHUNK_TIMEOUT},
+    nonblocking::quic::{DEFAULT_MAX_STREAMS_PER_MS, DEFAULT_WAIT_FOR_CHUNK_TIMEOUT},
     quic::{spawn_server_multi, MAX_STAKED_CONNECTIONS},
     streamer::StakedNodes,
 };
@@ -75,7 +75,7 @@ impl Tpu {
         let (tpu_forwards_sender, tpu_forwards_receiver) =
             crossbeam_channel::bounded(Tpu::TPU_QUEUE_CAPACITY);
 
-        let (_, tpu_quic_t) = spawn_server_multi(
+        let tpu_result = spawn_server_multi(
             "quic_streamer_tpu",
             transactions_quic_sockets,
             keypair,
@@ -86,12 +86,13 @@ impl Tpu {
             staked_nodes.clone(),
             MAX_STAKED_CONNECTIONS,
             max_unstaked_quic_connections,
+            DEFAULT_MAX_STREAMS_PER_MS,
             DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
             Duration::from_millis(DEFAULT_TPU_COALESCE_MS),
         )
         .unwrap();
 
-        let (_, tpu_forwards_quic_t) = spawn_server_multi(
+        let tpu_fwd_result = spawn_server_multi(
             "quic_streamer_tpu_forwards",
             transactions_forwards_quic_sockets,
             keypair,
@@ -102,6 +103,7 @@ impl Tpu {
             staked_nodes.clone(),
             MAX_STAKED_CONNECTIONS,
             0, // Prevent unstaked nodes from forwarding transactions
+            DEFAULT_MAX_STREAMS_PER_MS,
             DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
             Duration::from_millis(DEFAULT_TPU_COALESCE_MS),
         )
@@ -122,7 +124,7 @@ impl Tpu {
                 fetch_stage,
                 staked_nodes_updater_service,
                 sigverify_stage,
-                thread_handles: vec![tpu_quic_t, tpu_forwards_quic_t],
+                thread_handles: vec![tpu_result.thread , tpu_fwd_result.thread],
             },
             banking_packet_receiver,
         )
