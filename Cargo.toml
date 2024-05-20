@@ -58,21 +58,21 @@ serde = { version = "1.0.160", features = ["derive"] }
 serde_json = "1.0.96"
 serde_yaml = "0.9.32"
 sha2 = "0.10.6"
-agave-validator = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-address-lookup-table-program = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-client = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-core = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-gossip = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-measure = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-metrics = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-net-utils = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-perf = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-program =  {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-rayon-threadlimit = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-runtime = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-streamer = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-zk-token-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
+agave-validator = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-address-lookup-table-program = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-client = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-core = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-gossip = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-measure = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-metrics = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-net-utils = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-perf = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-program =  {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-rayon-threadlimit = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-runtime = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-streamer = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-zk-token-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
 thiserror = "1.0.40"
 tikv-jemallocator = { version = "0.4", features = ["profiling"] }
 tokio = { version = "1.29.1", features = ["full"] }
@@ -93,5 +93,5 @@ lto = "thin"
 
 [patch.crates-io]
 
-solana-program = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
-solana-zk-token-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "100b4ba1d58bd8c706c12dc9910275d9c605fc86"}
+solana-program = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
+solana-zk-token-sdk = {git = "https://github.com/lijunwangs/solana.git", rev = "ee7ada7c5e1020d709f55413284266fc7f6e0d08"}
