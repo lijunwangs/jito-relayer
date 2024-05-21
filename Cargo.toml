@@ -58,7 +58,7 @@ serde = { version = "1.0.160", features = ["derive"] }
 serde_json = "1.0.96"
 serde_yaml = "0.9.32"
 sha2 = "0.10.6"
-agave-validator = {git = "https://github.com/lijunwangs/solana.git", rev = "7b51a9ce289dd81e6ed78291c957484463ce96c2"}
+agave-validator = {git = "https://github.com/lijunwangs/solana.git", rev = "0e6724ea51d9362af1c4e4d30f06468f8bf7323b"}
 solana-address-lookup-table-program = {git = "https://github.com/lijunwangs/solana.git", rev = "7b51a9ce289dd81e6ed78291c957484463ce96c2"}
 solana-client = {git = "https://github.com/lijunwangs/solana.git", rev = "7b51a9ce289dd81e6ed78291c957484463ce96c2"}
 solana-core = {git = "https://github.com/lijunwangs/solana.git", rev = "7b51a9ce289dd81e6ed78291c957484463ce96c2"}

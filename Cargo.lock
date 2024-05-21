@@ -66,20 +66,31 @@ dependencies = [
 [[package]]
 name = "agave-geyser-plugin-interface"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "log",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+]
+
+[[package]]
+name = "agave-geyser-plugin-interface"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "log",
- "solana-sdk",
- "solana-transaction-status",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
 ]
 
 [[package]]
 name = "agave-validator"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
- "agave-geyser-plugin-interface",
+ "agave-geyser-plugin-interface 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "chrono",
  "clap 2.34.0",
  "console",
@@ -104,34 +115,34 @@ dependencies = [
  "serde_json",
  "serde_yaml",
  "signal-hook",
- "solana-accounts-db",
- "solana-clap-utils",
- "solana-cli-config",
- "solana-core",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cli-config 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-download-utils",
- "solana-entry",
- "solana-faucet",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-faucet 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-genesis-utils",
- "solana-geyser-plugin-manager",
- "solana-gossip",
- "solana-ledger",
- "solana-logger",
- "solana-metrics",
- "solana-net-utils",
- "solana-perf",
- "solana-poh",
- "solana-rpc",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-runtime",
- "solana-sdk",
- "solana-send-transaction-service",
- "solana-storage-bigtable",
- "solana-streamer",
+ "solana-geyser-plugin-manager 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-storage-bigtable 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-test-validator",
- "solana-tpu-client",
- "solana-version",
- "solana-vote-program",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "symlink",
  "thiserror",
  "tikv-jemallocator",
@@ -2583,10 +2594,10 @@ dependencies = [
  "jito-protos",
  "log",
  "prost-types 0.12.4",
- "solana-core",
- "solana-metrics",
- "solana-perf",
- "solana-sdk",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "tokio-stream",
@@ -2604,16 +2615,16 @@ dependencies = [
  "lazy_static",
  "log",
  "rayon",
- "solana-client",
- "solana-core",
- "solana-gossip",
- "solana-measure",
- "solana-metrics",
- "solana-perf",
- "solana-rayon-threadlimit",
- "solana-runtime",
- "solana-sdk",
- "solana-streamer",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "tokio-stream",
@@ -2627,8 +2638,8 @@ dependencies = [
  "prost 0.12.4",
  "prost-types 0.12.4",
  "protobuf-src",
- "solana-perf",
- "solana-sdk",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tonic 0.10.2",
  "tonic-build 0.10.2",
 ]
@@ -2653,11 +2664,11 @@ dependencies = [
  "rand 0.8.5",
  "serde",
  "sha2 0.10.8",
- "solana-client",
- "solana-core",
- "solana-metrics",
- "solana-perf",
- "solana-sdk",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "tokio-stream",
@@ -2673,7 +2684,7 @@ dependencies = [
  "log",
  "serde",
  "serde_json",
- "solana-sdk",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tokio",
  "tower",
 ]
@@ -2685,9 +2696,9 @@ dependencies = [
  "crossbeam-channel",
  "dashmap 5.5.3",
  "log",
- "solana-client",
- "solana-metrics",
- "solana-sdk",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
 ]
 
 [[package]]
@@ -2714,14 +2725,14 @@ dependencies = [
  "prost-types 0.12.4",
  "serde",
  "serde_yaml",
- "solana-address-lookup-table-program",
- "solana-client",
- "solana-core",
- "solana-metrics",
- "solana-net-utils",
- "solana-perf",
- "solana-program",
- "solana-sdk",
+ "solana-address-lookup-table-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tikv-jemallocator",
  "tokio",
  "tokio-stream",
@@ -4101,8 +4112,24 @@ source = "git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a
 dependencies = [
  "bytes",
  "pin-project-lite",
- "quinn-proto",
- "quinn-udp",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
+ "quinn-udp 0.4.0 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
+ "rustc-hash",
+ "rustls",
+ "thiserror",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "quinn"
+version = "0.10.2"
+source = "git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed#ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed"
+dependencies = [
+ "bytes",
+ "pin-project-lite",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "quinn-udp 0.4.0 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
  "rustc-hash",
  "rustls",
  "thiserror",
@@ -4128,9 +4155,38 @@ dependencies = [
 ]
 
 [[package]]
+name = "quinn-proto"
+version = "0.10.2"
+source = "git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed#ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed"
+dependencies = [
+ "bytes",
+ "rand 0.8.5",
+ "ring 0.16.20",
+ "rustc-hash",
+ "rustls",
+ "rustls-native-certs",
+ "slab",
+ "thiserror",
+ "tinyvec",
+ "tracing",
+]
+
+[[package]]
 name = "quinn-udp"
 version = "0.4.0"
 source = "git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9#49c8f7c0050f226c23fe4a730491c1b57f5195e9"
+dependencies = [
+ "bytes",
+ "libc",
+ "socket2",
+ "tracing",
+ "windows-sys 0.48.0",
+]
+
+[[package]]
+name = "quinn-udp"
+version = "0.4.0"
+source = "git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed#ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed"
 dependencies = [
  "bytes",
  "libc",
@@ -4923,6 +4979,30 @@ dependencies = [
 [[package]]
 name = "solana-account-decoder"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "Inflector",
+ "base64 0.21.7",
+ "bincode",
+ "bs58",
+ "bv",
+ "lazy_static",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-token",
+ "spl-token-2022",
+ "spl-token-group-interface",
+ "spl-token-metadata-interface",
+ "thiserror",
+ "zstd",
+]
+
+[[package]]
+name = "solana-account-decoder"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "Inflector",
@@ -4934,14 +5014,72 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solana-config-program",
- "solana-sdk",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-token",
  "spl-token-2022",
  "spl-token-group-interface",
  "spl-token-metadata-interface",
  "thiserror",
  "zstd",
+]
+
+[[package]]
+name = "solana-accounts-db"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "arrayref",
+ "bincode",
+ "blake3",
+ "bv",
+ "bytemuck",
+ "byteorder",
+ "bzip2",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "flate2",
+ "fnv",
+ "fs-err",
+ "im",
+ "index_list",
+ "itertools 0.10.5",
+ "lazy_static",
+ "log",
+ "lz4",
+ "memmap2",
+ "modular-bitfield",
+ "num-derive 0.3.3",
+ "num-traits",
+ "num_cpus",
+ "num_enum 0.6.1",
+ "ouroboros",
+ "percentage",
+ "qualifier_attr",
+ "rand 0.8.5",
+ "rayon",
+ "regex",
+ "rustc_version",
+ "serde",
+ "serde_derive",
+ "solana-bucket-map 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "static_assertions",
+ "strum",
+ "strum_macros",
+ "tar",
+ "tempfile",
+ "thiserror",
 ]
 
 [[package]]
@@ -4982,23 +5120,43 @@ dependencies = [
  "rustc_version",
  "serde",
  "serde_derive",
- "solana-bucket-map",
- "solana-config-program",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-measure",
- "solana-metrics",
- "solana-program-runtime",
- "solana-rayon-threadlimit",
- "solana-sdk",
- "solana-stake-program",
- "solana-system-program",
- "solana-vote-program",
+ "solana-bucket-map 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "static_assertions",
  "strum",
  "strum_macros",
  "tar",
  "tempfile",
+ "thiserror",
+]
+
+[[package]]
+name = "solana-address-lookup-table-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "bytemuck",
+ "log",
+ "num-derive 0.3.3",
+ "num-traits",
+ "rustc_version",
+ "serde",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "thiserror",
 ]
 
@@ -5014,24 +5172,24 @@ dependencies = [
  "num-traits",
  "rustc_version",
  "serde",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-program",
- "solana-program-runtime",
- "solana-sdk",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
 ]
 
 [[package]]
 name = "solana-banks-client"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "borsh 0.10.3",
  "futures 0.3.30",
  "solana-banks-interface",
- "solana-program",
- "solana-sdk",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "tarpc",
  "thiserror",
  "tokio",
@@ -5041,30 +5199,48 @@ dependencies = [
 [[package]]
 name = "solana-banks-interface"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "serde",
- "solana-sdk",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "tarpc",
 ]
 
 [[package]]
 name = "solana-banks-server"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "bincode",
  "crossbeam-channel",
  "futures 0.3.30",
- "solana-accounts-db",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-banks-interface",
- "solana-client",
- "solana-runtime",
- "solana-sdk",
- "solana-send-transaction-service",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "tarpc",
  "tokio",
  "tokio-serde",
+]
+
+[[package]]
+name = "solana-bloom"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bv",
+ "fnv",
+ "log",
+ "rand 0.8.5",
+ "rayon",
+ "rustc_version",
+ "serde",
+ "serde_derive",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -5080,9 +5256,27 @@ dependencies = [
  "rustc_version",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-bpf-loader-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "byteorder",
+ "libsecp256k1",
+ "log",
+ "scopeguard",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana_rbpf",
+ "thiserror",
 ]
 
 [[package]]
@@ -5095,12 +5289,29 @@ dependencies = [
  "libsecp256k1",
  "log",
  "scopeguard",
- "solana-measure",
- "solana-program-runtime",
- "solana-sdk",
- "solana-zk-token-sdk",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "solana_rbpf",
  "thiserror",
+]
+
+[[package]]
+name = "solana-bucket-map"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bv",
+ "bytemuck",
+ "log",
+ "memmap2",
+ "modular-bitfield",
+ "num_enum 0.6.1",
+ "rand 0.8.5",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "tempfile",
 ]
 
 [[package]]
@@ -5115,9 +5326,25 @@ dependencies = [
  "modular-bitfield",
  "num_enum 0.6.1",
  "rand 0.8.5",
- "solana-measure",
- "solana-sdk",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tempfile",
+]
+
+[[package]]
+name = "solana-clap-utils"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "chrono",
+ "clap 2.34.0",
+ "rpassword",
+ "solana-remote-wallet 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tiny-bip39",
+ "uriparse",
+ "url 2.5.0",
 ]
 
 [[package]]
@@ -5128,11 +5355,26 @@ dependencies = [
  "chrono",
  "clap 2.34.0",
  "rpassword",
- "solana-remote-wallet",
- "solana-sdk",
+ "solana-remote-wallet 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tiny-bip39",
  "uriparse",
+ "url 2.5.0",
+]
+
+[[package]]
+name = "solana-cli-config"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "dirs-next",
+ "lazy_static",
+ "serde",
+ "serde_derive",
+ "serde_yaml",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "url 2.5.0",
 ]
 
@@ -5146,15 +5388,15 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_yaml",
- "solana-clap-utils",
- "solana-sdk",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "url 2.5.0",
 ]
 
 [[package]]
 name = "solana-cli-output"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "Inflector",
  "base64 0.21.7",
@@ -5167,14 +5409,46 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "solana-account-decoder",
- "solana-clap-utils",
- "solana-cli-config",
- "solana-rpc-client-api",
- "solana-sdk",
- "solana-transaction-status",
- "solana-vote-program",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cli-config 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "spl-memo",
+]
+
+[[package]]
+name = "solana-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-trait",
+ "bincode",
+ "dashmap 4.0.2",
+ "futures 0.3.30",
+ "futures-util",
+ "indexmap 2.2.6",
+ "indicatif",
+ "log",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "rayon",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-pubsub-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-nonce-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-thin-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-udp-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -5190,21 +5464,21 @@ dependencies = [
  "indexmap 2.2.6",
  "indicatif",
  "log",
- "quinn",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
  "rayon",
- "solana-connection-cache",
- "solana-measure",
- "solana-metrics",
- "solana-pubsub-client",
- "solana-quic-client",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-rpc-client-nonce-utils",
- "solana-sdk",
- "solana-streamer",
- "solana-thin-client",
- "solana-tpu-client",
- "solana-udp-client",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-pubsub-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-nonce-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-thin-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-udp-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
 ]
@@ -5212,10 +5486,32 @@ dependencies = [
 [[package]]
 name = "solana-compute-budget-program"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+]
+
+[[package]]
+name = "solana-compute-budget-program"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
- "solana-program-runtime",
- "solana-sdk",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-config-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "chrono",
+ "serde",
+ "serde_derive",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -5227,8 +5523,29 @@ dependencies = [
  "chrono",
  "serde",
  "serde_derive",
- "solana-program-runtime",
- "solana-sdk",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-connection-cache"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-trait",
+ "bincode",
+ "crossbeam-channel",
+ "futures-util",
+ "indexmap 2.2.6",
+ "log",
+ "rand 0.8.5",
+ "rayon",
+ "rcgen",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -5245,11 +5562,84 @@ dependencies = [
  "rand 0.8.5",
  "rayon",
  "rcgen",
- "solana-measure",
- "solana-metrics",
- "solana-sdk",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-core"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "base64 0.21.7",
+ "bincode",
+ "bs58",
+ "bytes",
+ "chrono",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "eager",
+ "etcd-client",
+ "futures 0.3.30",
+ "histogram",
+ "itertools 0.10.5",
+ "lazy_static",
+ "log",
+ "lru",
+ "min-max-heap",
+ "num_enum 0.6.1",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+ "rayon",
+ "rcgen",
+ "rolling-file",
+ "rustc_version",
+ "rustls",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-bloom 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-geyser-plugin-manager 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-turbine 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "strum",
+ "strum_macros",
+ "sys-info",
+ "sysctl",
+ "tempfile",
+ "thiserror",
+ "tokio",
+ "trees",
 ]
 
 [[package]]
@@ -5274,7 +5664,7 @@ dependencies = [
  "lru",
  "min-max-heap",
  "num_enum 0.6.1",
- "quinn",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
  "rand 0.8.5",
  "rand_chacha 0.3.1",
  "rayon",
@@ -5285,36 +5675,36 @@ dependencies = [
  "serde",
  "serde_bytes",
  "serde_derive",
- "solana-accounts-db",
- "solana-bloom",
- "solana-client",
- "solana-cost-model",
- "solana-entry",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-geyser-plugin-manager",
- "solana-gossip",
- "solana-ledger",
- "solana-measure",
- "solana-metrics",
- "solana-net-utils",
- "solana-perf",
- "solana-poh",
- "solana-program-runtime",
- "solana-quic-client",
- "solana-rayon-threadlimit",
- "solana-rpc",
- "solana-rpc-client-api",
- "solana-runtime",
- "solana-sdk",
- "solana-send-transaction-service",
- "solana-streamer",
- "solana-tpu-client",
- "solana-transaction-status",
- "solana-turbine",
- "solana-version",
- "solana-vote",
- "solana-vote-program",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-bloom 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-geyser-plugin-manager 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-turbine 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "strum",
  "strum_macros",
  "sys-info",
@@ -5328,37 +5718,81 @@ dependencies = [
 [[package]]
 name = "solana-cost-model"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "lazy_static",
+ "log",
+ "rustc_version",
+ "solana-address-lookup-table-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-compute-budget-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-loader-v4-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+]
+
+[[package]]
+name = "solana-cost-model"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "lazy_static",
  "log",
  "rustc_version",
- "solana-address-lookup-table-program",
- "solana-bpf-loader-program",
- "solana-compute-budget-program",
- "solana-config-program",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-loader-v4-program",
- "solana-metrics",
- "solana-program-runtime",
- "solana-sdk",
- "solana-stake-program",
- "solana-system-program",
- "solana-vote-program",
+ "solana-address-lookup-table-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-compute-budget-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-loader-v4-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
 ]
 
 [[package]]
 name = "solana-download-utils"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "console",
  "indicatif",
  "log",
  "reqwest",
- "solana-runtime",
- "solana-sdk",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+]
+
+[[package]]
+name = "solana-entry"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "crossbeam-channel",
+ "dlopen2",
+ "lazy_static",
+ "log",
+ "rand 0.8.5",
+ "rayon",
+ "serde",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-merkle-tree 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -5374,12 +5808,35 @@ dependencies = [
  "rand 0.8.5",
  "rayon",
  "serde",
- "solana-measure",
- "solana-merkle-tree",
- "solana-metrics",
- "solana-perf",
- "solana-rayon-threadlimit",
- "solana-sdk",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-merkle-tree 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-faucet"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "byteorder",
+ "clap 2.34.0",
+ "crossbeam-channel",
+ "log",
+ "serde",
+ "serde_derive",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cli-config 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-memo",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -5394,15 +5851,44 @@ dependencies = [
  "log",
  "serde",
  "serde_derive",
- "solana-clap-utils",
- "solana-cli-config",
- "solana-logger",
- "solana-metrics",
- "solana-sdk",
- "solana-version",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-cli-config 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-memo",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-frozen-abi"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "ahash 0.8.5",
+ "blake3",
+ "block-buffer 0.10.4",
+ "bs58",
+ "bv",
+ "byteorder",
+ "cc",
+ "either",
+ "generic-array",
+ "im",
+ "lazy_static",
+ "log",
+ "memmap2",
+ "rustc_version",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "sha2 0.10.8",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "subtle",
+ "thiserror",
 ]
 
 [[package]]
@@ -5429,9 +5915,20 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "sha2 0.10.8",
- "solana-frozen-abi-macro",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "subtle",
  "thiserror",
+]
+
+[[package]]
+name = "solana-frozen-abi-macro"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "rustc_version",
+ "syn 2.0.60",
 ]
 
 [[package]]
@@ -5448,21 +5945,21 @@ dependencies = [
 [[package]]
 name = "solana-genesis-utils"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "log",
- "solana-accounts-db",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-download-utils",
- "solana-rpc-client",
- "solana-sdk",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
 name = "solana-geyser-plugin-manager"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
- "agave-geyser-plugin-interface",
+ "agave-geyser-plugin-interface 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "bs58",
  "crossbeam-channel",
  "json5",
@@ -5471,15 +5968,90 @@ dependencies = [
  "libloading 0.7.4",
  "log",
  "serde_json",
- "solana-accounts-db",
- "solana-entry",
- "solana-ledger",
- "solana-measure",
- "solana-metrics",
- "solana-rpc",
- "solana-runtime",
- "solana-sdk",
- "solana-transaction-status",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+]
+
+[[package]]
+name = "solana-geyser-plugin-manager"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+dependencies = [
+ "agave-geyser-plugin-interface 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "bs58",
+ "crossbeam-channel",
+ "json5",
+ "jsonrpc-core",
+ "jsonrpc-server-utils",
+ "libloading 0.7.4",
+ "log",
+ "serde_json",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "thiserror",
+]
+
+[[package]]
+name = "solana-gossip"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "assert_matches",
+ "bincode",
+ "bv",
+ "clap 2.34.0",
+ "crossbeam-channel",
+ "flate2",
+ "indexmap 2.2.6",
+ "itertools 0.10.5",
+ "log",
+ "lru",
+ "num-traits",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+ "rayon",
+ "rustc_version",
+ "rustversion",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "solana-bloom 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-thin-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "static_assertions",
  "thiserror",
 ]
 
@@ -5507,29 +6079,94 @@ dependencies = [
  "serde",
  "serde_bytes",
  "serde_derive",
- "solana-bloom",
- "solana-clap-utils",
- "solana-client",
- "solana-entry",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-ledger",
- "solana-logger",
- "solana-measure",
- "solana-metrics",
- "solana-net-utils",
- "solana-perf",
- "solana-rayon-threadlimit",
- "solana-runtime",
- "solana-sdk",
- "solana-streamer",
- "solana-thin-client",
- "solana-tpu-client",
- "solana-version",
- "solana-vote",
- "solana-vote-program",
+ "solana-bloom 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-thin-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "static_assertions",
  "thiserror",
+]
+
+[[package]]
+name = "solana-ledger"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "assert_matches",
+ "bincode",
+ "bitflags 2.5.0",
+ "byteorder",
+ "chrono",
+ "chrono-humanize",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "fs_extra",
+ "futures 0.3.30",
+ "itertools 0.10.5",
+ "lazy_static",
+ "libc",
+ "log",
+ "lru",
+ "num_cpus",
+ "num_enum 0.6.1",
+ "prost 0.11.9",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+ "rayon",
+ "reed-solomon-erasure",
+ "rocksdb",
+ "rustc_version",
+ "scopeguard",
+ "serde",
+ "serde_bytes",
+ "sha2 0.10.8",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-storage-bigtable 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-storage-proto 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-token",
+ "spl-token-2022",
+ "static_assertions",
+ "strum",
+ "strum_macros",
+ "tempfile",
+ "thiserror",
+ "tokio",
+ "tokio-stream",
+ "trees",
 ]
 
 [[package]]
@@ -5565,26 +6202,26 @@ dependencies = [
  "serde",
  "serde_bytes",
  "sha2 0.10.8",
- "solana-account-decoder",
- "solana-accounts-db",
- "solana-bpf-loader-program",
- "solana-cost-model",
- "solana-entry",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-measure",
- "solana-metrics",
- "solana-perf",
- "solana-program-runtime",
- "solana-rayon-threadlimit",
- "solana-runtime",
- "solana-sdk",
- "solana-stake-program",
- "solana-storage-bigtable",
- "solana-storage-proto",
- "solana-transaction-status",
- "solana-vote",
- "solana-vote-program",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-storage-bigtable 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-storage-proto 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-token",
  "spl-token-2022",
  "static_assertions",
@@ -5600,13 +6237,35 @@ dependencies = [
 [[package]]
 name = "solana-loader-v4-program"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "log",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana_rbpf",
+]
+
+[[package]]
+name = "solana-loader-v4-program"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "log",
- "solana-measure",
- "solana-program-runtime",
- "solana-sdk",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "solana_rbpf",
+]
+
+[[package]]
+name = "solana-logger"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "env_logger",
+ "lazy_static",
+ "log",
 ]
 
 [[package]]
@@ -5622,10 +6281,28 @@ dependencies = [
 [[package]]
 name = "solana-measure"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "log",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+]
+
+[[package]]
+name = "solana-measure"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "log",
- "solana-sdk",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-merkle-tree"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "fast-math",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -5634,7 +6311,21 @@ version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "fast-math",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-metrics"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "crossbeam-channel",
+ "gethostname",
+ "lazy_static",
+ "log",
+ "reqwest",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
 ]
 
 [[package]]
@@ -5647,8 +6338,29 @@ dependencies = [
  "lazy_static",
  "log",
  "reqwest",
- "solana-sdk",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
+]
+
+[[package]]
+name = "solana-net-utils"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "clap 3.2.25",
+ "crossbeam-channel",
+ "log",
+ "nix",
+ "rand 0.8.5",
+ "serde",
+ "serde_derive",
+ "socket2",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "tokio",
+ "url 2.5.0",
 ]
 
 [[package]]
@@ -5665,11 +6377,39 @@ dependencies = [
  "serde",
  "serde_derive",
  "socket2",
- "solana-logger",
- "solana-sdk",
- "solana-version",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tokio",
  "url 2.5.0",
+]
+
+[[package]]
+name = "solana-perf"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "ahash 0.8.5",
+ "bincode",
+ "bv",
+ "caps",
+ "curve25519-dalek",
+ "dlopen2",
+ "fnv",
+ "lazy_static",
+ "libc",
+ "log",
+ "nix",
+ "rand 0.8.5",
+ "rayon",
+ "rustc_version",
+ "serde",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -5692,12 +6432,29 @@ dependencies = [
  "rayon",
  "rustc_version",
  "serde",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-metrics",
- "solana-rayon-threadlimit",
- "solana-sdk",
- "solana-vote-program",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-poh"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "core_affinity",
+ "crossbeam-channel",
+ "log",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
 ]
 
 [[package]]
@@ -5708,13 +6465,66 @@ dependencies = [
  "core_affinity",
  "crossbeam-channel",
  "log",
- "solana-entry",
- "solana-ledger",
- "solana-measure",
- "solana-metrics",
- "solana-runtime",
- "solana-sdk",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
+]
+
+[[package]]
+name = "solana-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "ark-bn254",
+ "ark-ec",
+ "ark-ff",
+ "ark-serialize",
+ "base64 0.21.7",
+ "bincode",
+ "bitflags 2.5.0",
+ "blake3",
+ "borsh 0.10.3",
+ "borsh 0.9.3",
+ "bs58",
+ "bv",
+ "bytemuck",
+ "cc",
+ "console_error_panic_hook",
+ "console_log",
+ "curve25519-dalek",
+ "getrandom 0.2.14",
+ "itertools 0.10.5",
+ "js-sys",
+ "lazy_static",
+ "libc",
+ "libsecp256k1",
+ "light-poseidon",
+ "log",
+ "memoffset 0.9.1",
+ "num-bigint 0.4.4",
+ "num-derive 0.3.3",
+ "num-traits",
+ "parking_lot 0.12.2",
+ "rand 0.8.5",
+ "rustc_version",
+ "rustversion",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "sha2 0.10.8",
+ "sha3 0.10.8",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tiny-bip39",
+ "wasm-bindgen",
+ "zeroize",
 ]
 
 [[package]]
@@ -5761,13 +6571,40 @@ dependencies = [
  "serde_json",
  "sha2 0.10.8",
  "sha3 0.10.8",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk-macro",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tiny-bip39",
  "wasm-bindgen",
  "zeroize",
+]
+
+[[package]]
+name = "solana-program-runtime"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "base64 0.21.7",
+ "bincode",
+ "eager",
+ "enum-iterator",
+ "itertools 0.10.5",
+ "libc",
+ "log",
+ "num-derive 0.3.3",
+ "num-traits",
+ "percentage",
+ "rand 0.8.5",
+ "rustc_version",
+ "serde",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana_rbpf",
+ "thiserror",
 ]
 
 [[package]]
@@ -5788,11 +6625,11 @@ dependencies = [
  "rand 0.8.5",
  "rustc_version",
  "serde",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-measure",
- "solana-metrics",
- "solana-sdk",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "solana_rbpf",
  "thiserror",
 ]
@@ -5800,7 +6637,7 @@ dependencies = [
 [[package]]
 name = "solana-program-test"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "assert_matches",
  "async-trait",
@@ -5810,20 +6647,44 @@ dependencies = [
  "crossbeam-channel",
  "log",
  "serde",
- "solana-accounts-db",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-banks-client",
  "solana-banks-interface",
  "solana-banks-server",
- "solana-bpf-loader-program",
- "solana-logger",
- "solana-program-runtime",
- "solana-runtime",
- "solana-sdk",
- "solana-vote-program",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana_rbpf",
  "test-case",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-pubsub-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "crossbeam-channel",
+ "futures-util",
+ "log",
+ "reqwest",
+ "semver",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
+ "tokio-stream",
+ "tokio-tungstenite",
+ "tungstenite",
+ "url 2.5.0",
 ]
 
 [[package]]
@@ -5839,15 +6700,41 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solana-account-decoder",
- "solana-rpc-client-api",
- "solana-sdk",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "tokio-stream",
  "tokio-tungstenite",
  "tungstenite",
  "url 2.5.0",
+]
+
+[[package]]
+name = "solana-quic-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-mutex",
+ "async-trait",
+ "futures 0.3.30",
+ "itertools 0.10.5",
+ "lazy_static",
+ "log",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "rcgen",
+ "rustls",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -5861,19 +6748,28 @@ dependencies = [
  "itertools 0.10.5",
  "lazy_static",
  "log",
- "quinn",
- "quinn-proto",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
  "rcgen",
  "rustls",
- "solana-connection-cache",
- "solana-measure",
- "solana-metrics",
- "solana-net-utils",
- "solana-rpc-client-api",
- "solana-sdk",
- "solana-streamer",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-rayon-threadlimit"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "lazy_static",
+ "num_cpus",
 ]
 
 [[package]]
@@ -5883,6 +6779,24 @@ source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78
 dependencies = [
  "lazy_static",
  "num_cpus",
+]
+
+[[package]]
+name = "solana-remote-wallet"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "console",
+ "dialoguer",
+ "log",
+ "num-derive 0.3.3",
+ "num-traits",
+ "parking_lot 0.12.2",
+ "qstring",
+ "semver",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "uriparse",
 ]
 
 [[package]]
@@ -5898,9 +6812,65 @@ dependencies = [
  "parking_lot 0.12.2",
  "qstring",
  "semver",
- "solana-sdk",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "uriparse",
+]
+
+[[package]]
+name = "solana-rpc"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "base64 0.21.7",
+ "bincode",
+ "bs58",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "itertools 0.10.5",
+ "jsonrpc-core",
+ "jsonrpc-core-client",
+ "jsonrpc-derive",
+ "jsonrpc-http-server",
+ "jsonrpc-pubsub",
+ "libc",
+ "log",
+ "rayon",
+ "regex",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "soketto",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-faucet 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-storage-bigtable 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-token",
+ "spl-token-2022",
+ "stream-cancel",
+ "thiserror",
+ "tokio",
+ "tokio-util 0.6.10",
 ]
 
 [[package]]
@@ -5927,36 +6897,61 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "soketto",
- "solana-account-decoder",
- "solana-accounts-db",
- "solana-client",
- "solana-entry",
- "solana-faucet",
- "solana-gossip",
- "solana-ledger",
- "solana-measure",
- "solana-metrics",
- "solana-perf",
- "solana-poh",
- "solana-rayon-threadlimit",
- "solana-rpc-client-api",
- "solana-runtime",
- "solana-sdk",
- "solana-send-transaction-service",
- "solana-stake-program",
- "solana-storage-bigtable",
- "solana-streamer",
- "solana-tpu-client",
- "solana-transaction-status",
- "solana-version",
- "solana-vote",
- "solana-vote-program",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-faucet 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-send-transaction-service 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-storage-bigtable 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-token",
  "spl-token-2022",
  "stream-cancel",
  "thiserror",
  "tokio",
  "tokio-util 0.6.10",
+]
+
+[[package]]
+name = "solana-rpc-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-trait",
+ "base64 0.21.7",
+ "bincode",
+ "bs58",
+ "indicatif",
+ "log",
+ "reqwest",
+ "semver",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "tokio",
 ]
 
 [[package]]
@@ -5975,13 +6970,34 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solana-account-decoder",
- "solana-rpc-client-api",
- "solana-sdk",
- "solana-transaction-status",
- "solana-version",
- "solana-vote-program",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tokio",
+]
+
+[[package]]
+name = "solana-rpc-client-api"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "base64 0.21.7",
+ "bs58",
+ "jsonrpc-core",
+ "reqwest",
+ "semver",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-token-2022",
+ "thiserror",
 ]
 
 [[package]]
@@ -5997,11 +7013,23 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solana-account-decoder",
- "solana-sdk",
- "solana-transaction-status",
- "solana-version",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-token-2022",
+ "thiserror",
+]
+
+[[package]]
+name = "solana-rpc-client-nonce-utils"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "clap 2.34.0",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "thiserror",
 ]
 
@@ -6011,10 +7039,86 @@ version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "clap 2.34.0",
- "solana-clap-utils",
- "solana-rpc-client",
- "solana-sdk",
+ "solana-clap-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
+]
+
+[[package]]
+name = "solana-runtime"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "arrayref",
+ "base64 0.21.7",
+ "bincode",
+ "blake3",
+ "bv",
+ "bytemuck",
+ "byteorder",
+ "bzip2",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "dir-diff",
+ "flate2",
+ "fnv",
+ "fs-err",
+ "im",
+ "index_list",
+ "itertools 0.10.5",
+ "lazy_static",
+ "log",
+ "lru",
+ "lz4",
+ "memmap2",
+ "modular-bitfield",
+ "num-derive 0.3.3",
+ "num-traits",
+ "num_cpus",
+ "num_enum 0.6.1",
+ "ouroboros",
+ "percentage",
+ "qualifier_attr",
+ "rand 0.8.5",
+ "rayon",
+ "regex",
+ "rustc_version",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "siphasher",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-address-lookup-table-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-bucket-map 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-compute-budget-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-loader-v4-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-zk-token-proof-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "static_assertions",
+ "strum",
+ "strum_macros",
+ "symlink",
+ "tar",
+ "tempfile",
+ "thiserror",
+ "zstd",
 ]
 
 [[package]]
@@ -6060,29 +7164,29 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "siphasher",
- "solana-accounts-db",
- "solana-address-lookup-table-program",
- "solana-bpf-loader-program",
- "solana-bucket-map",
- "solana-compute-budget-program",
- "solana-config-program",
- "solana-cost-model",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-loader-v4-program",
- "solana-measure",
- "solana-metrics",
- "solana-perf",
- "solana-program-runtime",
- "solana-rayon-threadlimit",
- "solana-sdk",
- "solana-stake-program",
- "solana-system-program",
- "solana-version",
- "solana-vote",
- "solana-vote-program",
- "solana-zk-token-proof-program",
- "solana-zk-token-sdk",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-address-lookup-table-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-bpf-loader-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-bucket-map 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-compute-budget-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-cost-model 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-loader-v4-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-stake-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-system-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-version 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-zk-token-proof-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "static_assertions",
  "strum",
  "strum_macros",
@@ -6091,6 +7195,59 @@ dependencies = [
  "tempfile",
  "thiserror",
  "zstd",
+]
+
+[[package]]
+name = "solana-sdk"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "assert_matches",
+ "base64 0.21.7",
+ "bincode",
+ "bitflags 2.5.0",
+ "borsh 0.10.3",
+ "bs58",
+ "bytemuck",
+ "byteorder",
+ "chrono",
+ "derivation-path",
+ "digest 0.10.7",
+ "ed25519-dalek",
+ "ed25519-dalek-bip32",
+ "generic-array",
+ "hmac 0.12.1",
+ "itertools 0.10.5",
+ "js-sys",
+ "lazy_static",
+ "libsecp256k1",
+ "log",
+ "memmap2",
+ "num-derive 0.3.3",
+ "num-traits",
+ "num_enum 0.6.1",
+ "pbkdf2 0.11.0",
+ "qstring",
+ "qualifier_attr",
+ "rand 0.7.3",
+ "rand 0.8.5",
+ "rustc_version",
+ "rustversion",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "serde_with",
+ "sha2 0.10.8",
+ "sha3 0.10.8",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "uriparse",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -6136,14 +7293,26 @@ dependencies = [
  "serde_with",
  "sha2 0.10.8",
  "sha3 0.10.8",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-logger",
- "solana-program",
- "solana-sdk-macro",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "uriparse",
  "wasm-bindgen",
+]
+
+[[package]]
+name = "solana-sdk-macro"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bs58",
+ "proc-macro2",
+ "quote",
+ "rustversion",
+ "syn 2.0.60",
 ]
 
 [[package]]
@@ -6167,16 +7336,45 @@ checksum = "468aa43b7edb1f9b7b7b686d5c3aeb6630dc1708e86e31343499dd5c4d775183"
 [[package]]
 name = "solana-send-transaction-service"
 version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "crossbeam-channel",
+ "log",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+]
+
+[[package]]
+name = "solana-send-transaction-service"
+version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "crossbeam-channel",
  "log",
- "solana-client",
- "solana-measure",
- "solana-metrics",
- "solana-runtime",
- "solana-sdk",
- "solana-tpu-client",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-stake-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "log",
+ "rustc_version",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -6187,10 +7385,43 @@ dependencies = [
  "bincode",
  "log",
  "rustc_version",
- "solana-config-program",
- "solana-program-runtime",
- "solana-sdk",
- "solana-vote-program",
+ "solana-config-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-storage-bigtable"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "backoff",
+ "bincode",
+ "bytes",
+ "bzip2",
+ "enum-iterator",
+ "flate2",
+ "futures 0.3.30",
+ "goauth",
+ "http",
+ "hyper",
+ "hyper-proxy",
+ "log",
+ "openssl",
+ "prost 0.11.9",
+ "prost-types 0.11.9",
+ "serde",
+ "serde_derive",
+ "smpl_jwt",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-storage-proto 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
+ "tonic 0.9.2",
+ "zstd",
 ]
 
 [[package]]
@@ -6216,14 +7447,30 @@ dependencies = [
  "serde",
  "serde_derive",
  "smpl_jwt",
- "solana-metrics",
- "solana-sdk",
- "solana-storage-proto",
- "solana-transaction-status",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-storage-proto 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "tonic 0.9.2",
  "zstd",
+]
+
+[[package]]
+name = "solana-storage-proto"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "bs58",
+ "prost 0.11.9",
+ "protobuf-src",
+ "serde",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "tonic-build 0.9.2",
 ]
 
 [[package]]
@@ -6236,10 +7483,43 @@ dependencies = [
  "prost 0.11.9",
  "protobuf-src",
  "serde",
- "solana-account-decoder",
- "solana-sdk",
- "solana-transaction-status",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-transaction-status 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "tonic-build 0.9.2",
+]
+
+[[package]]
+name = "solana-streamer"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-channel",
+ "bytes",
+ "crossbeam-channel",
+ "dashmap 4.0.2",
+ "futures-util",
+ "histogram",
+ "indexmap 2.2.6",
+ "itertools 0.10.5",
+ "libc",
+ "log",
+ "nix",
+ "pem",
+ "percentage",
+ "pkcs8",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "rand 0.8.5",
+ "rcgen",
+ "rustls",
+ "smallvec",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
+ "x509-parser",
 ]
 
 [[package]]
@@ -6261,18 +7541,31 @@ dependencies = [
  "pem",
  "percentage",
  "pkcs8",
- "quinn",
- "quinn-proto",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
+ "quinn-proto 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
  "rand 0.8.5",
  "rcgen",
  "rustls",
  "smallvec",
- "solana-metrics",
- "solana-perf",
- "solana-sdk",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
  "x509-parser",
+]
+
+[[package]]
+name = "solana-system-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "log",
+ "serde",
+ "serde_derive",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -6284,14 +7577,14 @@ dependencies = [
  "log",
  "serde",
  "serde_derive",
- "solana-program-runtime",
- "solana-sdk",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
 ]
 
 [[package]]
 name = "solana-test-validator"
 version = "1.17.34"
-source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
 dependencies = [
  "base64 0.21.7",
  "bincode",
@@ -6299,24 +7592,38 @@ dependencies = [
  "log",
  "serde_derive",
  "serde_json",
- "solana-accounts-db",
+ "solana-accounts-db 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-cli-output",
- "solana-client",
- "solana-core",
- "solana-geyser-plugin-manager",
- "solana-gossip",
- "solana-ledger",
- "solana-logger",
- "solana-net-utils",
- "solana-program-runtime",
+ "solana-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-core 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-geyser-plugin-manager 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-logger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "solana-program-test",
- "solana-rpc",
- "solana-rpc-client",
- "solana-runtime",
- "solana-sdk",
- "solana-streamer",
- "solana-tpu-client",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-tpu-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "tokio",
+]
+
+[[package]]
+name = "solana-thin-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "log",
+ "rayon",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -6327,10 +7634,33 @@ dependencies = [
  "bincode",
  "log",
  "rayon",
- "solana-connection-cache",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-sdk",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-tpu-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-trait",
+ "bincode",
+ "futures-util",
+ "indexmap 2.2.6",
+ "indicatif",
+ "log",
+ "rayon",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-pubsub-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -6345,15 +7675,39 @@ dependencies = [
  "indicatif",
  "log",
  "rayon",
- "solana-connection-cache",
- "solana-measure",
- "solana-metrics",
- "solana-pubsub-client",
- "solana-rpc-client",
- "solana-rpc-client-api",
- "solana-sdk",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-pubsub-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-transaction-status"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "Inflector",
+ "base64 0.21.7",
+ "bincode",
+ "borsh 0.10.3",
+ "bs58",
+ "lazy_static",
+ "log",
+ "serde",
+ "serde_derive",
+ "serde_json",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "spl-associated-token-account",
+ "spl-memo",
+ "spl-token",
+ "spl-token-2022",
+ "thiserror",
 ]
 
 [[package]]
@@ -6371,13 +7725,49 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "solana-account-decoder",
- "solana-sdk",
+ "solana-account-decoder 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-associated-token-account",
  "spl-memo",
  "spl-token",
  "spl-token-2022",
  "thiserror",
+]
+
+[[package]]
+name = "solana-turbine"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "bytes",
+ "crossbeam-channel",
+ "futures 0.3.30",
+ "itertools 0.10.5",
+ "log",
+ "lru",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=ec833bff92a30f1fb8ec04d2d78c67dbf4a8d0ed)",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+ "rayon",
+ "rcgen",
+ "rustls",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -6392,26 +7782,40 @@ dependencies = [
  "itertools 0.10.5",
  "log",
  "lru",
- "quinn",
+ "quinn 0.10.2 (git+https://github.com/lijunwangs/quinn.git?rev=49c8f7c0050f226c23fe4a730491c1b57f5195e9)",
  "rand 0.8.5",
  "rand_chacha 0.3.1",
  "rayon",
  "rcgen",
  "rustls",
- "solana-entry",
- "solana-gossip",
- "solana-ledger",
- "solana-measure",
- "solana-metrics",
- "solana-perf",
- "solana-poh",
- "solana-quic-client",
- "solana-rayon-threadlimit",
- "solana-rpc",
- "solana-rpc-client-api",
- "solana-runtime",
- "solana-sdk",
- "solana-streamer",
+ "solana-entry 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-gossip 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-ledger 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-measure 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-perf 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-poh 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-quic-client 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rayon-threadlimit 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-rpc-client-api 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
+name = "solana-udp-client"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "async-trait",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "thiserror",
  "tokio",
 ]
@@ -6422,12 +7826,27 @@ version = "1.17.34"
 source = "git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2#7b51a9ce289dd81e6ed78291c957484463ce96c2"
 dependencies = [
  "async-trait",
- "solana-connection-cache",
- "solana-net-utils",
- "solana-sdk",
- "solana-streamer",
+ "solana-connection-cache 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-net-utils 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-streamer 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-version"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "log",
+ "rustc_version",
+ "semver",
+ "serde",
+ "serde_derive",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -6440,9 +7859,27 @@ dependencies = [
  "semver",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-vote"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "crossbeam-channel",
+ "itertools 0.10.5",
+ "log",
+ "rustc_version",
+ "serde",
+ "serde_derive",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "thiserror",
 ]
 
 [[package]]
@@ -6456,10 +7893,31 @@ dependencies = [
  "rustc_version",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk",
- "solana-vote-program",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-vote-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "thiserror",
+]
+
+[[package]]
+name = "solana-vote-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bincode",
+ "log",
+ "num-derive 0.3.3",
+ "num-traits",
+ "rustc_version",
+ "serde",
+ "serde_derive",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
  "thiserror",
 ]
 
@@ -6475,13 +7933,26 @@ dependencies = [
  "rustc_version",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-metrics",
- "solana-program",
- "solana-program-runtime",
- "solana-sdk",
+ "solana-frozen-abi 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-frozen-abi-macro 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-metrics 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
+]
+
+[[package]]
+name = "solana-zk-token-proof-program"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "bytemuck",
+ "num-derive 0.3.3",
+ "num-traits",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
 ]
 
 [[package]]
@@ -6492,9 +7963,37 @@ dependencies = [
  "bytemuck",
  "num-derive 0.3.3",
  "num-traits",
- "solana-program-runtime",
- "solana-sdk",
- "solana-zk-token-sdk",
+ "solana-program-runtime 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+]
+
+[[package]]
+name = "solana-zk-token-sdk"
+version = "1.17.34"
+source = "git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b#0e6724ea51d9362af1c4e4d30f06468f8bf7323b"
+dependencies = [
+ "aes-gcm-siv",
+ "base64 0.21.7",
+ "bincode",
+ "bytemuck",
+ "byteorder",
+ "curve25519-dalek",
+ "getrandom 0.1.16",
+ "itertools 0.10.5",
+ "lazy_static",
+ "merlin",
+ "num-derive 0.3.3",
+ "num-traits",
+ "rand 0.7.3",
+ "serde",
+ "serde_json",
+ "sha3 0.9.1",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=0e6724ea51d9362af1c4e4d30f06468f8bf7323b)",
+ "subtle",
+ "thiserror",
+ "zeroize",
 ]
 
 [[package]]
@@ -6518,8 +8017,8 @@ dependencies = [
  "serde",
  "serde_json",
  "sha3 0.9.1",
- "solana-program",
- "solana-sdk",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "subtle",
  "thiserror",
  "zeroize",
@@ -6576,7 +8075,7 @@ dependencies = [
  "borsh 0.10.3",
  "num-derive 0.4.2",
  "num-traits",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-token",
  "spl-token-2022",
  "thiserror",
@@ -6589,7 +8088,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "daa600f2fe56f32e923261719bae640d873edadbc5237681a39b8e37bfd4d263"
 dependencies = [
  "bytemuck",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator-derive",
 ]
 
@@ -6623,7 +8122,7 @@ version = "4.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f0f180b03318c3dbab3ef4e1e4d46d5211ae3c780940dd0a28695aba4b59a75a"
 dependencies = [
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
 ]
 
 [[package]]
@@ -6634,8 +8133,8 @@ checksum = "85a5db7e4efb1107b0b8e52a13f035437cdcb36ef99c58f6d467f089d9b2915a"
 dependencies = [
  "borsh 0.10.3",
  "bytemuck",
- "solana-program",
- "solana-zk-token-sdk",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-program-error",
 ]
 
@@ -6647,7 +8146,7 @@ checksum = "7e0657b6490196971d9e729520ba934911ff41fbb2cb9004463dbe23cf8b4b4f"
 dependencies = [
  "num-derive 0.4.2",
  "num-traits",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-program-error-derive",
  "thiserror",
 ]
@@ -6671,7 +8170,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "56f335787add7fa711819f9e7c573f8145a5358a709446fe2d24bf2a88117c90"
 dependencies = [
  "bytemuck",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator",
  "spl-pod",
  "spl-program-error",
@@ -6689,7 +8188,7 @@ dependencies = [
  "num-derive 0.3.3",
  "num-traits",
  "num_enum 0.6.1",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "thiserror",
 ]
 
@@ -6704,9 +8203,9 @@ dependencies = [
  "num-derive 0.4.2",
  "num-traits",
  "num_enum 0.7.2",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "solana-security-txt",
- "solana-zk-token-sdk",
+ "solana-zk-token-sdk 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-memo",
  "spl-pod",
  "spl-token",
@@ -6724,7 +8223,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b889509d49fa74a4a033ca5dae6c2307e9e918122d97e58562f5c4ffa795c75d"
 dependencies = [
  "bytemuck",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator",
  "spl-pod",
  "spl-program-error",
@@ -6737,7 +8236,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4c16ce3ba6979645fb7627aa1e435576172dd63088dc7848cb09aa331fa1fe4f"
 dependencies = [
  "borsh 0.10.3",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator",
  "spl-pod",
  "spl-program-error",
@@ -6752,7 +8251,7 @@ checksum = "7aabdb7c471566f6ddcee724beb8618449ea24b399e58d464d6b5bc7db550259"
 dependencies = [
  "arrayref",
  "bytemuck",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator",
  "spl-pod",
  "spl-program-error",
@@ -6767,7 +8266,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8f9ebd75d29c5f48de5f6a9c114e08531030b75b8ac2c557600ac7da0b73b1e8"
 dependencies = [
  "bytemuck",
- "solana-program",
+ "solana-program 1.17.34 (git+https://github.com/lijunwangs/solana.git?rev=7b51a9ce289dd81e6ed78291c957484463ce96c2)",
  "spl-discriminator",
  "spl-pod",
  "spl-program-error",
