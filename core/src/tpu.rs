@@ -19,7 +19,10 @@ use solana_core::{
 };
 use solana_sdk::signature::Keypair;
 use solana_streamer::{
-    nonblocking::quic::{DEFAULT_WAIT_FOR_CHUNK_TIMEOUT},
+    nonblocking::quic::{
+        DEFAULT_MAX_CONNECTIONS_PER_IPADDR_PER_MINUTE, DEFAULT_MAX_STREAMS_PER_MS,
+        DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
+    },
     quic::{spawn_server_multi, MAX_STAKED_CONNECTIONS},
     streamer::StakedNodes,
 };
@@ -86,6 +89,8 @@ impl Tpu {
             staked_nodes.clone(),
             MAX_STAKED_CONNECTIONS,
             max_unstaked_quic_connections,
+            DEFAULT_MAX_STREAMS_PER_MS,
+            DEFAULT_MAX_CONNECTIONS_PER_IPADDR_PER_MINUTE,
             DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
             Duration::from_millis(DEFAULT_TPU_COALESCE_MS),
         )
@@ -102,6 +107,8 @@ impl Tpu {
             staked_nodes.clone(),
             MAX_STAKED_CONNECTIONS.saturating_add(max_unstaked_quic_connections),
             0, // Prevent unstaked nodes from forwarding transactions
+            DEFAULT_MAX_STREAMS_PER_MS,
+            DEFAULT_MAX_CONNECTIONS_PER_IPADDR_PER_MINUTE,
             DEFAULT_WAIT_FOR_CHUNK_TIMEOUT,
             Duration::from_millis(DEFAULT_TPU_COALESCE_MS),
         )
