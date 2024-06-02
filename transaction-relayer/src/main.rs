@@ -1,6 +1,6 @@
 use std::{
     collections::HashSet,
-    fs,
+    fs::{self, OpenOptions},
     net::{IpAddr, Ipv4Addr, SocketAddr},
     path::PathBuf,
     str::FromStr,
@@ -8,8 +8,7 @@ use std::{
         atomic::{AtomicBool, Ordering},
         Arc,
     },
-    thread,
-    thread::JoinHandle,
+    thread::{self, JoinHandle},
     time::{Duration, Instant},
 };
 
@@ -263,9 +262,16 @@ fn main() {
     const MAX_BUFFERED_REQUESTS: usize = 10;
     const REQUESTS_PER_SECOND: u64 = 5;
 
+    let file = OpenOptions::new()
+        .write(true)
+        .create(true)
+        .append(true)
+        .open("relayer.log")
+        .unwrap();
     // one can override the default log level by setting the env var RUST_LOG
     env_logger::Builder::from_env(Env::new().default_filter_or("info"))
         .format_timestamp_millis()
+        .target(env_logger::Target::Pipe(Box::new(file)))
         .init();
 
     let args: Args = Args::parse();
