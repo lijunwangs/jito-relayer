@@ -54,8 +54,8 @@ impl Tpu {
         sockets: TpuSockets,
         exit: &Arc<AtomicBool>,
         keypair: &Keypair,
-        tpu_ip: &IpAddr,
-        tpu_fwd_ip: &IpAddr,
+        _tpu_ip: &IpAddr,
+        _tpu_fwd_ip: &IpAddr,
         rpc_load_balancer: &Arc<LoadBalancer>,
         max_unstaked_quic_connections: usize,
     ) -> (Self, Receiver<BankingPacketBatch>) {
@@ -78,11 +78,11 @@ impl Tpu {
         let (tpu_forwards_sender, tpu_forwards_receiver) =
             crossbeam_channel::bounded(Tpu::TPU_QUEUE_CAPACITY);
 
-        let (_, tpu_quic_t) = spawn_server_multi(
+        let tpu_result = spawn_server_multi(
+            "quicstrmtpu",
             "quic_streamer_tpu",
             transactions_quic_sockets,
             keypair,
-            *tpu_ip,
             tpu_sender.clone(),
             exit.clone(),
             MAX_QUIC_CONNECTIONS_PER_PEER,
@@ -96,11 +96,11 @@ impl Tpu {
         )
         .unwrap();
 
-        let (_, tpu_forwards_quic_t) = spawn_server_multi(
+        let tpu_fwd_result = spawn_server_multi(
+            "quicstrmtpufwd",
             "quic_streamer_tpu_forwards",
             transactions_forwards_quic_sockets,
             keypair,
-            *tpu_fwd_ip,
             tpu_forwards_sender,
             exit.clone(),
             MAX_QUIC_CONNECTIONS_PER_PEER,
@@ -122,6 +122,7 @@ impl Tpu {
             tpu_receiver,
             TransactionSigVerifier::new(banking_packet_sender),
             "tpu-verifier",
+            "tpu-verifier",
         );
 
         (
@@ -129,7 +130,7 @@ impl Tpu {
                 fetch_stage,
                 staked_nodes_updater_service,
                 sigverify_stage,
-                thread_handles: vec![tpu_quic_t, tpu_forwards_quic_t],
+                thread_handles: vec![tpu_result.thread, tpu_fwd_result.thread],
             },
             banking_packet_receiver,
         )
